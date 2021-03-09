@@ -21,10 +21,10 @@ const CareersMap = () => {
     }
   `
   
-  const { loading, error, data } = useQuery(CareersItemsQuery)
-  const MyFacebookLoader = <Facebook />
+  const { loading, data } = useQuery(CareersItemsQuery)
+  const MyFacebookLoader = () => <Facebook />
 
-  if (loading || error) {
+  if (loading) {
     return <div className="c-loader__container">
       <MyFacebookLoader />
     </div>
@@ -32,7 +32,7 @@ const CareersMap = () => {
     return <div className="c-careers">
       {
         data.careersItems.map((careersItem, index) => {
-          return <li className="c-careers__item" key={index} data-aos="fade">
+          return <div className="c-careers__item" key={index} data-aos="fade">
             <div className="c-careers__item--inner">
               <h5 className="c-careers__item--inner-title">{careersItem.title}</h5>
               <h5 className="c-careers__item--inner-body">{careersItem.jobDescription}</h5>
@@ -47,7 +47,7 @@ const CareersMap = () => {
               </Link>
               </li>
             </div>
-          </li>
+          </div>
         })
       }
     </div>
