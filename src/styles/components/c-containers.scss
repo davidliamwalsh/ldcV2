@@ -1,0 +1,23 @@
+.c-footer__container {
+  max-width: 100%;
+  background: $dark;
+}
+
+.c-loader__container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.c-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em 1em;
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-container {
+    padding: 2em 0;
+  }
+}

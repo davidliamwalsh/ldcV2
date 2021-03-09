@@ -1,0 +1,65 @@
+.c-contact-form {
+  position: relative;
+
+  &__message {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: .5em 0;    
+    color: $white;
+    background: $danger;
+    text-align: center;
+    z-index: 99;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  input[type=text], 
+  input[type=email],
+  select, 
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  &__name {
+    &--label {
+      position: relative;
+    }
+    &--input {
+      position: relative;
+    }
+  }
+
+  &__email {
+    &--label {
+      position: relative;
+    }
+    &--input {
+      position: relative;
+    }
+  }
+
+  &__body {
+    &--label {
+      position: relative;
+    }
+    &--input {
+      position: relative;
+    }
+  }
+
+  &__submit {
+    position: relative;
+    background: $button;
+    color: $white;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
