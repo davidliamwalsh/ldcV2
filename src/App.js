@@ -22,6 +22,8 @@ import Paintaing from './pages/services/Painting'
 import ProtectiveCoatings from './pages/services/ProtectiveCoatings'
 import RenderingPlastering from './pages/services/RenderingPlastering'
 
+import Legal from './pages/Legal'
+
 import RouteScrollToTop from './components/RouteScrollToTop'
 import './App.scss'
 
@@ -58,6 +60,9 @@ function App() {
             <Route path = "/services/painting" component={Paintaing} />
             <Route path = "/services/protective-coatings" component={ProtectiveCoatings} />
             <Route path = "/services/rendering-plastering" component={RenderingPlastering} />
+          </Switch>
+          <Switch>
+            <Route path = "/legal" component={Legal} />
           </Switch>
         </Router>
       </BrowserRouter>
