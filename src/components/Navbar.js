@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../static/ldc-logo.png'
+import { Link, NavLink } from 'react-router-dom'
+import logo from '../static/logo-faviconcopy.png'
 
 class Navbar extends Component {
   constructor (props) {
@@ -58,11 +58,9 @@ class Navbar extends Component {
     return (
       <div className={`c-nav ${this.renderTransparantNavBar()}`} id="nav">
         <div className={`c-navbar`}>
-          <div className="c-navbar__logo">
-            <Link to="/">
+          <Link to="/" className="c-navbar__logo">
             <img className="c-navbar__logo--hero" src={logo} alt="" />
-            </Link>
-          </div>
+          </Link>
           <div className="c-navbar__burger" onClick={this.burgerClick}>
             <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
             <div className={`c-navbar__burger-line--middle ${this.burgerRotateMiddle()}`}></div>
@@ -70,34 +68,40 @@ class Navbar extends Component {
           </div>
           <div className={`c-navbar__links ${this.renderBurgerMenu()}`}>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link to='/'>
-              Home
-              </Link>
+              <NavLink exact to='/' activeClassName="active-nav-page"
+              activeStyle={{color: "#ede9e1"}}>
+                Home
+              </NavLink>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link to='/about'>
-              About
-              </Link>
+              <NavLink to='/about' activeClassName="active-nav-page"
+              activeStyle={{color: "#ede9e1"}}>
+                About
+              </NavLink>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link to='/sectors'>
-              Sectors
-              </Link>
+              <NavLink to='/sectors' activeClassName="active-nav-page"
+              activeStyle={{color: "#ede9e1"}}>
+                Sectors
+              </NavLink>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link to='/testimonials'>
-              Testimonials
-              </Link>
+              <NavLink to='/testimonials' activeClassName="active-nav-page"
+              activeStyle={{color: "#ede9e1"}}>
+                Testimonials
+              </NavLink>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link to='/careers'>
-              Careers
-              </Link>
+              <NavLink to='/careers' activeClassName="active-nav-page"
+              activeStyle={{color: "#ede9e1"}}>
+                Careers
+              </NavLink>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link to='/contact'>
-              Contact
-              </Link>
+              <NavLink to='/contact' activeClassName="active-nav-page"
+              activeStyle={{color: "#ede9e1"}}>
+                Contact
+              </NavLink>
             </li>
           </div>
         </div> 

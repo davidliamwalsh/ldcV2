@@ -16,7 +16,7 @@
 }
 
 .c-navbar {
-  height: 65px;
+  height: 80px;
   position: relative;
   width: 100%;
   max-width: 1000px;
@@ -27,14 +27,12 @@
     position: absolute;
     left: 1em;
     top: 50%;
-    width: 200px;
     transform: translate(0%, -50%);
-    display: grid;
-    grid-template-columns: 60px auto;
+    height: 65px;
+    
 
     &--hero {
-      width: 50px;
-      height: 50px;
+      height: 100%;
     }
   }
 
@@ -170,11 +168,10 @@
 
 @media screen and (min-width: 550px) {
   .c-navbar {
-    height: 75px;
+    height: 90px;
 
-    &__logo--hero {
-      width: 60px;
-      height: 60px;
+    &__logo {
+      height: 70px;
     }
   }
 }
@@ -258,4 +255,8 @@
   .c-navbar {
     padding: 0;
   }
+}
+
+.active-nav-page {
+  color: $xlightgrey;
 }
