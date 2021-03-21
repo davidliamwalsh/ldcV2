@@ -6,6 +6,7 @@ import HeaderIntro from './HeaderIntro'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import CookieConsent from "react-cookie-consent"
+import Navbar from './Navbar'
 
 class Layout extends Component {
 
@@ -20,6 +21,7 @@ class Layout extends Component {
   render () {
     return <>
       <HeaderIntro />
+      <Navbar />
       <Header />
       <ScrollToTop />
       { this.props.children }

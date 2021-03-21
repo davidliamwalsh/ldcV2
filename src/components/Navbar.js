@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../static/logo-faviconcopy.png'
+import logo from '../static/thisLogo.svg'
 
 class Navbar extends Component {
   constructor (props) {
@@ -25,10 +25,6 @@ class Navbar extends Component {
     return this.state.navBarOpen ? 'fade' : ''
   }
 
-  renderTransparantNavBar () {
-    return window.location.pathname === '/' ? 'c-nav-home' : ''
-  }
-
   burgerRotateTop () {
     return this.state.navBarOpen ? 'c-navbar__burger-top' : ''
   }
@@ -47,18 +43,24 @@ class Navbar extends Component {
 
   handeleScroll() {
     if (window.pageYOffset > 600) {
-      document.getElementById("nav").classList.add("c-nav__scroll-down"); 
+      document.getElementById("nav").classList.add("c-nav__scroll-down")
+      document.getElementById("navbar").classList.add("c-navbar__scroll-down")
+      document.getElementById("navbar-logo").classList.add("c-navbar__scroll-down--logo")
+      document.getElementById("navbar__link").classList.add("c-navbar__scroll-down--link")
     } else {
-      document.getElementById("nav").classList.remove("c-nav__scroll-down");
+      document.getElementById("nav").classList.remove("c-nav__scroll-down")
+      document.getElementById("navbar").classList.remove("c-navbar__scroll-down")
+      document.getElementById("navbar-logo").classList.remove("c-navbar__scroll-down--logo")
+      document.getElementById("navbar__link").classList.remove("c-navbar__scroll-down--link")
     }
   }
 
   render () {
     
     return (
-      <div className={`c-nav ${this.renderTransparantNavBar()}`} id="nav">
-        <div className={`c-navbar`}>
-          <Link to="/" className="c-navbar__logo">
+      <div className="c-nav" id="nav">
+        <div className={`c-navbar`} id="navbar">
+          <Link to="/" className="c-navbar__logo" id="navbar-logo">
             <img className="c-navbar__logo--hero" src={logo} alt="" />
           </Link>
           <div className="c-navbar__burger" onClick={this.burgerClick}>
@@ -67,39 +69,39 @@ class Navbar extends Component {
             <div className={`c-navbar__burger-line--bottom ${this.burgerRotateBottom()}`}></div>
           </div>
           <div className={`c-navbar__links ${this.renderBurgerMenu()}`}>
-            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <NavLink exact to='/' activeClassName="active-nav-page"
-              activeStyle={{color: "#ede9e1"}}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink exact to='/'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 Home
               </NavLink>
             </li>
-            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <NavLink to='/about' activeClassName="active-nav-page"
-              activeStyle={{color: "#ede9e1"}}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink to='/about'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 About
               </NavLink>
             </li>
-            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <NavLink to='/sectors' activeClassName="active-nav-page"
-              activeStyle={{color: "#ede9e1"}}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink to='/sectors'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 Sectors
               </NavLink>
             </li>
-            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <NavLink to='/testimonials' activeClassName="active-nav-page"
-              activeStyle={{color: "#ede9e1"}}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink to='/testimonials'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 Testimonials
               </NavLink>
             </li>
-            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <NavLink to='/careers' activeClassName="active-nav-page"
-              activeStyle={{color: "#ede9e1"}}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink to='/careers'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 Careers
               </NavLink>
             </li>
-            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <NavLink to='/contact' activeClassName="active-nav-page"
-              activeStyle={{color: "#ede9e1"}}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink to='/contact'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 Contact
               </NavLink>
             </li>

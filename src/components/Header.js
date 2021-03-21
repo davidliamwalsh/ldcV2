@@ -1,7 +1,6 @@
 import { Component } from 'react'
 import Slider from 'react-slick'
 import SignupForm from './SignupForm'
-import Navbar from './Navbar'
 import Banner from './Banner'
 
 class Header extends Component {
@@ -18,7 +17,6 @@ class Header extends Component {
     if (window.location.pathname === '/') {
       return (
         <div className="c-header">
-          <Navbar />
           <Slider {...settings}>
             <div>
               <div className="c-header__slider--image c-header__first">
@@ -72,7 +70,6 @@ class Header extends Component {
     } else {
       return (
         <>
-          <Navbar />
           <Banner />
         </>
       )
