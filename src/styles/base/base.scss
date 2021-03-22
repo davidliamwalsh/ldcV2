@@ -14,6 +14,12 @@ textarea:focus, input:focus{
   outline: none;
 }
 
+button:focus,
+.c-navbar__burger {
+  outline: none;
+  box-shadow: none;
+}
+
 li {
   list-style: none;
 }
