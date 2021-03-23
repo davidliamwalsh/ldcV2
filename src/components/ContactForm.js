@@ -42,7 +42,7 @@ const ContactForm = () => {
           <label className="c-contact-form__body--label">Message</label>
           <textarea name="message" rows="10" className="c-contact-form__body--input" placeholder="Please type your message" />
         </div>
-        <input type="submit" value="Send" className="c-contact-form__submit" />
+        <input type="submit" value="Send" className="c-contact-form__submit no-highlight" />
       </form>
     </div>
   </>

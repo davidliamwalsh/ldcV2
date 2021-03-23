@@ -22,7 +22,7 @@ class FAQ extends Component {
     return <div className="c-legal__item">
       <div className="c-legal__item--head">
         <h2 className="c-legal__item--head-title">FAQ</h2>
-        <span className="c-legal__item--head-button" onClick={this.faqClick}>+</span>
+        <span className="c-legal__item--head-button no-highlight" onClick={this.faqClick}>+</span>
       </div>
       <div className="c-legal__item--intro">
         <h4 className="c-legal__item--intro-text">This section is reserved for any questions which we believe will be relevant or helpful to future customers.</h4>

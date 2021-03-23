@@ -23,7 +23,7 @@ class ScrollToTop extends Component {
 
   render () {
     return <>
-      <button onClick={this.topFunction} className="c-scroll__button" id="myBtn">Top</button>
+      <button onClick={this.topFunction} className="c-scroll__button no-highlight" id="myBtn">Top</button>
     </>
   }
 }

@@ -21,9 +21,9 @@ class Home extends Component {
         <h4 className="o-section-head__title">
           Client Services
         </h4>
-        <Link to='/services' className="o-btn">
+        <a href='/services' className="o-btn no-highlight">
           View all
-        </Link>
+        </a>
       </div>
       <div className="o-section-head__line">
         <hr />
@@ -36,7 +36,7 @@ class Home extends Component {
         <h4 className="o-section-head__title">
           Testimonials
         </h4>
-        <Link to='/testimonials' className="o-btn">
+        <Link to='/testimonials' className="o-btn no-highlight">
           View all
         </Link>
       </div>

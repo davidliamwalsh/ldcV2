@@ -78,7 +78,7 @@ class Footer extends Component {
             <div className="c-footer-upper__list--head">
               <h4 className="c-footer-upper__list--head-title">Links</h4>
               <hr className="o-line" />
-              <span className="c-footer-upper__list--head-btn" onClick={this.footerClickFirst}>+</span>
+              <span className="c-footer-upper__list--head-btn no-highlight" onClick={this.footerClickFirst}>+</span>
             </div>
             <div className={`c-footer-upper__list--body ${this.renderFooterListFirst()}`}>
               <li className="c-footer-upper__list--item">
@@ -123,7 +123,7 @@ class Footer extends Component {
             <div className="c-footer-upper__list--head">
               <h4 className="c-footer-upper__list--head-title">Services</h4>
               <hr className="o-line" />
-              <span className="c-footer-upper__list--head-btn" onClick={this.footerClickSecond}>+</span>
+              <span className="c-footer-upper__list--head-btn no-highlight" onClick={this.footerClickSecond}>+</span>
             </div>
             <div className={`c-footer-upper__list--body ${this.renderFooterListSecond()}`}>
               <li className="c-footer-upper__list--item">
@@ -176,7 +176,7 @@ class Footer extends Component {
             </div>
             <div className={`c-footer-upper__list--body footer-item-active`}>
               <li className="c-footer-upper__list--item c-footer-upper__list--item-lineheight">
-                <p>
+                <p className="c-footer-upper__list--item__contact">
                   LDC Decorating Contractors Ltd<br />
                   Chamber 2<br />
                   Whitehall Chambers<br />
@@ -185,7 +185,7 @@ class Footer extends Component {
                   HX3 8EN
                 </p>
                 <p>Tel: 03303 201070</p>
-                <p>Office Hours: Mon-Fri 9am - 6pm</p>
+                <p className="c-footer-upper__list--item__contact">Office Hours: Mon-Fri 9am - 6pm</p>
                 <p>VAT Number: 141654721</p>
                 <p>Company Number: 8169972</p>
               </li>

@@ -9,10 +9,10 @@ class SignupForm extends Component {
             <label htmlFor="mce-EMAIL" className="c-signup__form--field-label">
               Sign Up
             </label>
-            <input type="email" name="EMAIL" className="email c-signup__form--field-input" placeholder="Your email...." required />
+            <input type="email" name="EMAIL" className="email c-signup__form--field-input no-highlight" placeholder="Your email...." required />
           </div>
           <div className="c-signup__form--submit">
-            <input type="submit" defaultValue="Subscribe" name="subscribe" className="c-signup__form--submit-btn" />
+            <input type="submit" defaultValue="Subscribe" name="subscribe" className="c-signup__form--submit-btn no-highlight" />
           </div>
         </form>
       </div>

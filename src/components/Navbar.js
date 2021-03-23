@@ -60,10 +60,10 @@ class Navbar extends Component {
     return (
       <div className="c-nav" id="nav">
         <div className={`c-navbar`} id="navbar">
-          <Link to="/" className="c-navbar__logo" id="navbar-logo">
+          <Link to="/" className="c-navbar__logo no-highlight" id="navbar-logo">
             <img className="c-navbar__logo--hero" src={logo} alt="" />
           </Link>
-          <div className="c-navbar__burger" onClick={this.burgerClick}>
+          <div className="c-navbar__burger no-highlight" onClick={this.burgerClick}>
             <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
             <div className={`c-navbar__burger-line--middle ${this.burgerRotateMiddle()}`}></div>
             <div className={`c-navbar__burger-line--bottom ${this.burgerRotateBottom()}`}></div>

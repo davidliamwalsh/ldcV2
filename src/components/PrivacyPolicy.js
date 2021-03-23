@@ -29,7 +29,7 @@ class PrivacyPolicy extends Component {
         <br />
         This privacy notice explains how we collect, store and use personal data about you when you visit the Website or App, buy Products from us or otherwise provide your personal data to us.</h4>
       </div>
-      <div className={`c-legal__item--list ${this.renderPrivacyListOpen()}`}>
+      <div className={`c-legal__item--list no-highlight ${this.renderPrivacyListOpen()}`}>
         <ul className="c-legal__item--list-container">
           <h4 className="c-legal__item--list-title">What data we gather</h4>
           <li className="c-legal__item--list-bullet">Name</li>
