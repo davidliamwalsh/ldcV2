@@ -88,6 +88,12 @@ class Navbar extends Component {
               </NavLink>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
+              <NavLink to='/services'
+              activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
+                Services
+              </NavLink>
+            </li>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`} id="navbar__link">
               <NavLink to='/testimonials'
               activeStyle={{color: "#2B282E", borderBottom: "2px solid #DC3545"}}>
                 Testimonials

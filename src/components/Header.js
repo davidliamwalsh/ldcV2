@@ -11,7 +11,8 @@ class Header extends Component {
       infinite: true,
       speed: 600,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true
     }
 
     if (window.location.pathname === '/') {
