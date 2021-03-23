@@ -2,7 +2,6 @@ import { Component } from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import ScrollToTop from './ScrollToTop'
-import HeaderIntro from './HeaderIntro'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import CookieConsent from "react-cookie-consent"
@@ -20,7 +19,7 @@ class Layout extends Component {
 
   render () {
     return <>
-      <HeaderIntro />
+      
       <Navbar />
       <Header />
       <ScrollToTop />
