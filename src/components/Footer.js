@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
+import NewsArticles from '../components/NewsArticlesFooter'
 
 class Footer extends Component {
   constructor (props) {
@@ -81,7 +82,7 @@ class Footer extends Component {
               <hr className="o-line" />
             </div>
             <div className={`c-footer-upper__list--body footer-item-active`}>
-              
+              <NewsArticles newsArticleSize={3} />
             </div>
           </div>
 
@@ -116,9 +117,9 @@ class Footer extends Component {
             </div>
             <div className="c-footer-lower__list">
             <li className="c-footer-lower__list--item">
-                <Link to={`${process.env.REACT_APP_BACKEND_URL}/admin`}>
+                <a href={`${process.env.REACT_APP_BACKEND_URL}/admin`}>
                   Admin 
-                </Link>
+                </a>
               </li>
               <li className="c-footer-lower__list--item">
                 <Link to='/legal'>

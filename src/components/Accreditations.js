@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import ipaf from '../static/accreditations/ipaf.jpg'
+import ipaf from '../static/accreditations/ipaf.jpeg'
 import alcumus from '../static/accreditations/alcumus.jpg'
 import chas from '../static/accreditations/chas.jpg'
 import cscs from '../static/accreditations/cscs.jpg'
